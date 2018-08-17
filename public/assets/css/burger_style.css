@@ -14,3 +14,12 @@ h1 {
 
 
 
+
+
+img,
+textarea {
+    display: block;
+    margin: auto;
+   
+}
+
