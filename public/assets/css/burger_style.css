@@ -12,10 +12,6 @@ h1 {
     color: Red;
 }
 
-
-
-
-
 img,
 textarea {
     display: block;
@@ -23,3 +19,27 @@ textarea {
    
 }
 
+#eat-btn {
+    display: block;
+    margin: auto;
+    height: 50px;
+    width: 150px;
+}
+
+p {
+    
+    text-align: center;
+    font-size: 20px;
+    color: blue; 
+}
+
+li {
+    font-weight: bold;
+    color: green;
+    font-size: 24px;
+    padding: 10px;
+}
+
+#special {
+    text-align: left;
+}

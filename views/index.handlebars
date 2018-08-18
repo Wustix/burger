@@ -1,16 +1,57 @@
 <div class="container">
-    <div id= "images">
-        <img class= "main-pic" src="assets/img/juicyburger.jpg" id="pic" alt="burger" height="200px" width="300px">
+    <div id="images">
+        <img class="main-pic" src="assets/img/juicyburger.jpg" id="pic" alt="burger" height="200px" width="300px">
     </div>
 
 
 
 
     <h1>EAT-DA-BURGER!</h1>
+    <br>
+    <br>
 
-    <div class="container" id="write-up">
-        <div class="form-group">
-            <textarea type="submit" id="newBurger" rows="7"></textarea>
+    <div class="row">
+        <div class="col-sm-6">
+            <h1 id="special">Burgers ready to Devour</h1>
+            <ul>
+                {{#each burgers}} {{#unless this.devoured}}
+                <li>
+                    {{this.id}} {{this.burger_name}}
+
+                    <form action="/{{this.id}}?" method="POST">
+                        <input type="hidden" name="devoured" value="true">
+                        <button class="btn-primary" type="submit">Devour It!</button>
+                    </form>
+
+                </li>
+                {{/unless}} {{/each}}
+            </ul>
         </div>
+
+        <div class="col-sm-6">
+
+            <h1 id="special">Devoured Burgers</h1>
+
+            {{#each burgers}} {{#if this.devoured}}
+            <li>
+                {{this.burger_name}}
+
+            </li>
+            {{/if}} {{/each}}
+
+        </div>
+
     </div>
+
+
+
+    <h1>Add A Burger</h1>
+    <br>
+    <form class="create-update-form" action="/burgers/create" method="POST">
+        <div class="form-group">
+            <p>Enter your order and then click submit, please!</p>
+            <textarea type="text" id="newBurger" name="name" rows="7"></textarea>
+            <button class="btn-primary" type="submit" id="eat-btn">Submit Order</button>
+        </div>
+    </form>
 </div>
