@@ -7,9 +7,9 @@ The app stores every buger in a database whether it is devoured or not.
 
 # Technologies Used
 
-*HTML
-*CSS
-*NODE
-*EXPRESS
-*HANDLEBARS
-*MYSQL
+* HTML
+* CSS
+* NODE
+* EXPRESS
+* HANDLEBARS
+* MYSQL
