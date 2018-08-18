@@ -4,12 +4,21 @@ body {
 
 #newBurger {
     width: 500px;
+    margin-bottom: 20px;
 }
 
 h1 {
     text-align: center;
     font-size: 32px;
+    color: black;
+}
+
+#main-title {
+    font-family: 'Permanent Marker', cursive, Times, Times New Roman, serif;
+    text-align: center;
+    font-size: 48px;
     color: Red;
+    margin-top: 20px;
 }
 
 img,
@@ -19,18 +28,41 @@ textarea {
    
 }
 
-#eat-btn {
+.btn {
+    display: inline-block;
+    margin: auto;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .btn:hover {background-color: #3e8e41}
+  
+  .btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+#make-btn {
     display: block;
     margin: auto;
-    height: 50px;
-    width: 150px;
 }
 
 p {
     
     text-align: center;
     font-size: 20px;
-    color: blue; 
+    color: blue;
+    margin-bottom: 15px; 
 }
 
 li {
@@ -42,4 +74,6 @@ li {
 
 #special {
     text-align: left;
+    font-family: 'Stalinist One', cursive, Times, Times New Roman, serif;
+    font-size: 24px;
 }

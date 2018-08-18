@@ -1,12 +1,12 @@
 <div class="container">
     <div id="images">
-        <img class="main-pic" src="assets/img/juicyburger.jpg" id="pic" alt="burger" height="200px" width="300px">
+        <img class="main-pic" src="assets/img/juicyburger.jpg" id="pic" alt="burger" height="400px" width="600px">
     </div>
 
 
 
 
-    <h1>EAT-DA-BURGER!</h1>
+    <h1 id="main-title">EAT-DAT-BURGER!</h1>
     <br>
     <br>
 
@@ -20,7 +20,7 @@
 
                     <form action="/{{this.id}}?" method="POST">
                         <input type="hidden" name="devoured" value="true">
-                        <button class="btn-primary" type="submit">Devour It!</button>
+                        <button class="btn" id="eat-btn" type="submit">Devour It!</button>
                     </form>
 
                 </li>
@@ -42,6 +42,9 @@
         </div>
 
     </div>
+    <br>
+    <br>
+    <br>
 
 
 
@@ -51,7 +54,7 @@
         <div class="form-group">
             <p>Enter your order and then click submit, please!</p>
             <textarea type="text" id="newBurger" name="name" rows="7"></textarea>
-            <button class="btn-primary" type="submit" id="eat-btn">Submit Order</button>
+            <button class="btn" type="submit" id="make-btn">Submit Order</button>
         </div>
     </form>
 </div>
