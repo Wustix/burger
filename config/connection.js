@@ -10,9 +10,9 @@ else {
   connection = mysql.createConnection({
     host: "blonze2d5mrbmcgf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     port: 3306,
-    user: "eq08nggujumeqhsc",
-    password: "ww3d8srbw5595a5f",
-    database: "cpm19hfkwnitbw3c"
+    user: "cphymyt1wmgctmum",
+    password: "u6v10ipfj3lcrjor",
+    database: "p1qmvedolnjyivzc"
   });
 };
 
